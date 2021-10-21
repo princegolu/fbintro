@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "874877788671",
+    "project_id": "fbintro-37bf8",
+    "storage_bucket": "fbintro-37bf8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874877788671:android:a603fc253c7328c682c7ca",
+        "android_client_info": {
+          "package_name": "com.example.fbintro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874877788671-710s13gukmoi5gjd8at2251b27siki2u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAskM_4JRLKlzKHRa3rngNQG7h0-kZQiCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874877788671-710s13gukmoi5gjd8at2251b27siki2u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
