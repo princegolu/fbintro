@@ -2,6 +2,7 @@ package com.example.fbintro;
 
 import static android.content.ContentValues.TAG;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,7 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
-    Button submit, get;
+    Button submit, get,sudoku;
     TextView edit,edit1;
     private FirebaseAuth mAuth;
     // creating a variable for our
@@ -41,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
        // login();
 
+
+
         firebaseDatabase = FirebaseDatabase.getInstance();
         // below line is used to get reference for our database.
         databaseReference = firebaseDatabase.getReference("EmployeeInfo").child("Name");
@@ -51,11 +54,21 @@ public class MainActivity extends AppCompatActivity {
 
         submit = findViewById(R.id.a);
         get = findViewById(R.id.b);
-        edit1 = findViewById(R.id.edit1);
+        sudoku =findViewById(R.id.sud);
+                edit1 = findViewById(R.id.edit1);
         edit = findViewById(R.id.edit);
 
 
 
+
+        sudoku.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                 Intent a = new Intent(getApplicationContext(), com.example.fbintro.sudoku.class);
+                 startActivity(a);
+
+            }
+        });
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 
 
     private void login() {
